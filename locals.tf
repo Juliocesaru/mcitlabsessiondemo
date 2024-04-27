@@ -10,9 +10,6 @@ locals{
 output "print"{
     value = local.servicename
 }
-output "print"{
-    value = city
-}
 output "secondprint"{
     value = local.forum
 }
