@@ -6,8 +6,8 @@ locals{
   firstname="julio"
   lastname="urueta"
   city="Montreal"
-  lenghtfirstname=lenght(local.firstname)
-  lenghtlastname=lenght(local.lastname)
+  lengthfirstname=length(local.firstname)
+  lengthlastname=length(local.lastname)
 }
 output "print"{
     value = local.servicename
