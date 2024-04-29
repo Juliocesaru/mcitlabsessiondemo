@@ -45,16 +45,16 @@ variable "environment"{
  default="staging"
 }
 variable "company_name"{
-  type=string
-  default="Julio Cloud Solutions Inc"
+ type=string
+ default="Julio Cloud Solutions Inc"
 }
  variable "years_of_establishment"{
-    type=number
-	default=15
+  type=number
+  default=15
 }
 variable "ifelsecheck"{
-	  type=bool
-	  defaul true
+ type=bool
+ defaul true
 }
 output "company_name_output"{
     value=var.company_name
@@ -62,6 +62,6 @@ output "company_name_output"{
 output "years_of_establishment_output"{
     value=var.years_of_establishment
 }
-outpput "ifelsecheck_output"{
-  value=var.ifelsecheck
+output "ifelsecheck_output"{
+    value=var.ifelsecheck
 }
