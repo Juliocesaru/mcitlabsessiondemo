@@ -54,7 +54,7 @@ variable "company_name"{
 }
 variable "ifelsecheck"{
  type=bool
- defaul true
+ default true
 }
 output "company_name_output"{
     value=var.company_name
