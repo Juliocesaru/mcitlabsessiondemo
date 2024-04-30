@@ -52,16 +52,10 @@ variable "company_name"{
   type=number
   default=15
 }
-variable "ifelsecheck"{
- type=bool
- default true
-}
 output "company_name_output"{
     value=var.company_name
 }
 output "years_of_establishment_output"{
     value=var.years_of_establishment
 }
-output "ifelsecheck_output"{
-    value=var.ifelsecheck
-}
+
