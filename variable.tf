@@ -65,8 +65,9 @@ variable "restaurants"{
 output "restaurantslist"{
     value=[for restaurants in var.restaurants:restaurants ]
 }
-total_output = ["150","150","150"]
-
+variable {
+    total_output = ["150","150","150"]
+}
 output "sumofthreenumbers"{
     value=sum([for numberoutput in local.total_output: tonumber(numberoutput)])
 }
