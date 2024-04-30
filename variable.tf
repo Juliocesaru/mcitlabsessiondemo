@@ -44,18 +44,24 @@ variable "environment"{
  type=string
  default="staging"
 }
-variable "company_name"{
- type=string
- default="Julio Cloud Solutions Inc"
+variable "summersports"{
+    type =list(string)
+    default=["soccer","basketball","badminton","tabletennis"]
 }
- variable "years_of_establishment"{
-  type=number
-  default=15
+output "summersportslist"{
+    value=[for summersport in var.summersports:summersport ]
 }
-output "company_name_output"{
-    value=var.company_name
+variable "universities"{
+    type =list(string)
+    default=["McGill","Concordia","UQAM","UdeMontreal","Teluq"]
 }
-output "years_of_establishment_output"{
-    value=var.years_of_establishment
+output "universitieslist"{
+    value=[for universities in var.universities:universities ]
 }
-
+variable "restaurants"{
+    type =list(string)
+    default=["Amir","Rodizio","Scores","Souvlaki Bar","Barbies"]
+}
+output "restaurantslist"{
+    value=[for restaurants in var.restaurants:restaurants ]
+}
