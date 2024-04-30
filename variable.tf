@@ -75,5 +75,5 @@ locals {
   listOfNumbers = [4, 5, 1, 2, 3, 4, 5]
 }
 output "sumofsevennumbers"{
-    value=sum([For numberoutput in local.total_output: tonumber(numberoutput)])
+    value=sum([For numberoutput in local.listOfNumbers: tonumber(numberoutput)])
 }
