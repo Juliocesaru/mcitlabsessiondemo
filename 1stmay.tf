@@ -44,7 +44,7 @@ output "split_example" {
 
 # Function 8: Join a list of strings into a single string with a separator
 variable "string_list" {
-  default = ["Julio", "Urueta","Julio","Urueta"]
+  default = ["Julio", "Urueta"]
 }
 
 output "join_example" {
