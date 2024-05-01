@@ -25,7 +25,7 @@ output "replaced_string" {
 
 # Function 5: Concatenate with another string
 variable "additional_string" {
-  default = " from Terraform"
+  default = " from St Jean "
 }
 
 output "concatenated_string" {
