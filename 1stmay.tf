@@ -1,6 +1,6 @@
 //==================================================1st May 2024=========================================//
 variable "original_string" {
-  default = "Montreal College Information Technology"
+  default = "julio urueta"
 }
 
 # Function 1: Length of the string
@@ -20,7 +20,7 @@ output "lowercase_string" {
 
 # Function 4: Replace "Hello" with "Hi"
 output "replaced_string" {
-  value = replace(var.original_string, "Montreal College Information Technology", "McGill University")
+  value = replace(var.original_string, "julio urueta", "mattias urueta")
 }
 
 # Function 5: Concatenate with another string
