@@ -11,6 +11,6 @@ output "is_Canada_in_list"{
   }
 
 output "merged_string"{
-  value = trim("i love" + "Canada"," ")
+  value = trim("I love" + "Canada"," ")
 }
 
