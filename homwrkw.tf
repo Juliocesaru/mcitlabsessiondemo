@@ -1,5 +1,5 @@
 variable "countries_list"{
-   default = ['Mexico","Greece","Italy","Germany","Portugal"]
+   default = ["Mexico","Greece","Italy","Germany","Portugal"]
   }
 
 output "countries_as_string"{
