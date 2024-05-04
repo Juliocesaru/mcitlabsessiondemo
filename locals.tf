@@ -41,4 +41,14 @@ locals {
   numbers_as_strings = ["724","238","219","291","555"]
   numbers_as_numbers = [for str in local.numbers_as_strings: tonumber(str)]
 }
+locals {
+  presidents = ["Obama", "Justin", "Kim Jong Un"]
+  countries = ["United States", "Canada", "North Korea"]
+  presidents_countries_map = zipmap(local.presidents, local.countries)
+}
+
+output "presidents_countries_map" {
+  value = local.presidents_countries_map
+  description = "A map of presidents to their respective countries."
+}
 
