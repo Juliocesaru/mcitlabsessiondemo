@@ -37,3 +37,8 @@ locals{
       character => local.enemies_destroyed[index]
   }
 }
+locals {
+  numbers_as_strings = ["724","238","219","291","555"]
+  numbers_as_numbers = [for str in local.numbers_as_strings: tonumber(str)]
+}
+
