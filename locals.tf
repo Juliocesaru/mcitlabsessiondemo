@@ -41,10 +41,6 @@ variable "winterlistOfSports" {
   type    = list(string)
   default = ["icehockey", "snowboarding", "iceskating"]
 }
-variable "winterlistOfSports" {
-  type    = list(string)
-  default = ["icehockey", "snowboarding", "iceskating", "sledging"]
-}
 locals {
   numbers_as_strings = ["724","238","219","291","555"]
   numbers_as_numbers = [for str in local.numbers_as_strings: tonumber(str)]
