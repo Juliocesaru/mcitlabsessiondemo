@@ -1,5 +1,4 @@
 locals {
-  clouds      = ["azure", "aws", "gcp"]
   new_clouds  = concat(local.clouds, ["alibaba", "ibm"])
 }
 
