@@ -37,11 +37,6 @@ locals{
       character => local.enemies_destroyed[index]
   }
 }
-locals {
-  clouds = ["azure", "aws", "gcp"]
-}
-
-}
 variable "winterlistOfSports" {
   type    = list(string)
   default = ["icehockey", "snowboarding", "iceskating"]
@@ -75,7 +70,7 @@ variable "user_roles" {
     alice = "admin"
     bob   = "editor"
     charlie = "viewer"
-  }
+ }
 }
 variable "default_role" {
   type    = string
@@ -93,5 +88,9 @@ locals {
 output "user_roles_result" {
   value = local.user_role_lookup
 }
+locals {
+  clouds = ["azure", "aws", "gcp"]
+}
+
 
 
