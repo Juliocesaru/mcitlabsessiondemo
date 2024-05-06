@@ -36,6 +36,7 @@ locals{
   character_enemy_map =   { for index,character in local.characters: # Convert character list to a set
       character => local.enemies_destroyed[index]
   }
+}
 variable "winterlistOfSports" {
   type    = list(string)
   default = ["icehockey", "snowboarding", "iceskating"]
