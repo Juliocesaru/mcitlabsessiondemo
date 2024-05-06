@@ -88,9 +88,6 @@ locals {
 output "user_roles_result" {
   value = local.user_role_lookup
 }
-locals {
-  clouds = ["azure", "aws", "gcp"]
-}
 
 
 
