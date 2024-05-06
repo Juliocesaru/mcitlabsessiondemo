@@ -88,8 +88,5 @@ locals {
 output "user_roles_result" {
   value = local.user_role_lookup
 }
-variable "total_output" {
-  type    = list(string)
-  default = ["150", "150", "150"]
-}
+
 
