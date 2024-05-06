@@ -55,15 +55,7 @@ output "presidents_countries_map" {
   value = local.presidents_countries_map
   description = "A map of presidents to their respective countries."
 }
-locals {
-  nested_list = [[2,2,2],[1,2,3],[2,3,2],[3,1,3]]
-  flattened_list = flatten(local.nested_list)
-}
 
-output "flattened_list" {
-  value = local.flattened_list
-  description = "A flattened list of all elements."
-}
 variable "user_roles" {
   type    = map(string)
   default = {
