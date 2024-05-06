@@ -10,3 +10,6 @@ locals {
 output "updated_clouds" {
   value = local.new_clouds
 }
+output "check_azure" {
+  value = contains(local.clouds, "azure") ? "Azure is part of the cloud list" : "Azure is not part of the cloud list"
+}
