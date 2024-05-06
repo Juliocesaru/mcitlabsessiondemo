@@ -1,3 +1,6 @@
+locals {
+  clouds = ["azure", "aws", "gcp"]
+}
 
 locals {
   clouds      = ["azure", "aws", "gcp"]
