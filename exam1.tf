@@ -12,7 +12,7 @@ output "check_azure" {
 locals {
   clouds       = ["azure", "aws", "gcp"]
   cloud_owners = ["Microsoft", "Amazon", "Google"]
-  cloud_map    = zipmap(local.clouds, local.cloud_owners)
+  cloud_map    = list(object({local.clouds, local.cloud_owners}))
 }
 
 output "cloud_map" {
