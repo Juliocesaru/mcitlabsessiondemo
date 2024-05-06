@@ -12,7 +12,13 @@ output "check_azure" {
 locals {
   clouds       = ["azure", "aws", "gcp"]
   cloud_owners = ["Microsoft", "Amazon", "Google"]
-  cloud_map    = list(object({local.clouds, local.cloud_owners}))
+  cloud_map    = [
+    for idx, cloud in local.clouds :
+    {
+      cloud_name   = cloud
+      cloud_owner  = local.cloud_owners[idx]
+    }
+  ]
 }
 
 output "cloud_map" {
