@@ -13,3 +13,9 @@ locals {
 output "incremented_output" {
   value = local.incremented_output
 }
+output "sports_list_evaluation" {
+  value = length(var.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
+}
+output "sports_list_evaluation" {
+  value = length(var.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
+}
