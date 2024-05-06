@@ -24,3 +24,16 @@ locals {
 output "cloud_map" {
   value = local.cloud_map
 }
+locals {
+  nested_list = [[1,2,3],[1,2],[1,2,3,4],[1,2,3,4,5]]
+  flattened_list = flatten(local.nested_list)
+  sum_of_flattened_list = sum(local.flattened_list)
+}
+
+output "flattened_list" {
+  value = local.flattened_list
+}
+
+output "sum_of_flattened_list" {
+  value = local.sum_of_flattened_list
+}
