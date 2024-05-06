@@ -20,6 +20,3 @@ locals {
 output "sports_list_evaluation" {
   value = length(var.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
 }
-output "check_azure" {
-  value = contains(local.clouds, "azure") ? "Azure is part of the cloud list" : "Azure is not part of the cloud list"
-}
