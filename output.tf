@@ -16,3 +16,6 @@ output "incremented_output" {
 output "sports_list_evaluation" {
   value = length(var.winterlistOfSports) > 3 ? "Winter sports list is extensive" : "Winter sports list is limited"
 }
+output "nested_map" {
+  value = var.nested_map
+}
