@@ -1,11 +1,11 @@
 locals{ 
   cluster_names=["Cali","East","North","South","Uptown"]
 }
-resource "azurerm_resource_group" "minaazureresourcegroup" {
-  name     = "Mina_MCIT_resource_group"
+resource "azurerm_resource_group" "Julioazureresourcegroup" {
+  name     = "Julio_MCIT_resource_group"
   location = "Canada Central"
 }
-resource "azurerm_resource_group" "minaazureresourcegroup2" {
+resource "azurerm_resource_group" "Julioazureresourcegroup2" {
   name     = "Julio_MCIT_resource_group"
   location = "UAE Central"
 }
