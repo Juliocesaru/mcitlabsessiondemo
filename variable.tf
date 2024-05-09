@@ -95,7 +95,4 @@ variable "nested_map" {
   }
 }
 
-variable{ 
-  cluster_names=["CCRF2301_Calicluster","CCRF2301_Eastcluster","CCRF2301_Northcluster","CCRF2301_Southcluster","Uptown"]
-}
 
