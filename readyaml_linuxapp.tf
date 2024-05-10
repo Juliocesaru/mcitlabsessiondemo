@@ -1,4 +1,4 @@
-locals{
+llocals{
   linux_app=[for f in fileset("${path.module}/configs", "[^_]*.yaml") : yamldecode(file("${path.module}/configs/${f}"))]
   linux_app_list = flatten([
     for app in local.linux_app : [
@@ -6,7 +6,7 @@ locals{
         name=linuxapps.name
         os_type=linuxapps.os_type
         sku_name=linuxapps.sku_name
-        client_certificate_enabled =linuxapps.client_certificate_enabled
+        enabled =linuxapps.enabled
       }
     ]
 ])
