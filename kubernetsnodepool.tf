@@ -1,4 +1,4 @@
-resourse "azurerm_kubernets_cluster_node_pool" 'kubenode1pool"{
+resourse "azurerm_kubernets_cluster_node_pool" "kube1nodepool"{
 for_each                = azurerm_kubernets_cluster.batchabcd
 name                    = "${each.key}"
 kubernets_cluster_id    = each.value.id
