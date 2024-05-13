@@ -1,5 +1,5 @@
 locals{ 
-  cluster_names=["Cali","East","North","South","Uptown"]
+  cluster_names=["cali","east","north","south","uptown"]
 }
 resource "azurerm_resource_group" "Julioazureresourcegroup" {
   name     = "Julio_MCIT_resource_group"
