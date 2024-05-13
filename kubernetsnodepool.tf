@@ -1,11 +1,11 @@
-resourse "azurerm_kubernets_cluster_node_pool" "kube1nodepool"{
-for_each                = azurerm_kubernets_cluster.batchabcd
-name                    = "${each.key}"
-kubernets_cluster_id    = each.value.id
-vm_size                 = "Standar_DS2_V2"
-node_count              = 1
+resource "azurerm_kubernetes_cluster_node_pool" "kube1nodepool" {
+ for_each               = azurerm_kubernetes_cluster.batchabcd
+ name                   = "${each.key}"
+ kubernetes_cluster_id  = each.value.id
+ vm_size                = "Standard_DS2_v2"
+ node_count             = 1
 
-tags = {
-  Environment = "Production"
- }
+  tags = {
+    Environment = "Production"
+  }
 }
