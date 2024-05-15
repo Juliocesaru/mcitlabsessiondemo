@@ -118,7 +118,7 @@ resource "azurerm_mssql_server" "julioMCIT" {
   }
 }
 variable "dns_prefix" {
-  description = "The DNS prefix for the Azure SQL Server."
+  description = "mcitdns"
   type        = string
 }
 
