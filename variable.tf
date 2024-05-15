@@ -121,7 +121,7 @@ variable "dns_prefix" {
   description = "mcitdns"
   type        = string
 }
-variable "Julio" {
-  description = "JulioMCIT"
+variable "myname" {
+  description = "Julio"
   type        = string
 }
