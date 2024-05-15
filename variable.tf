@@ -99,7 +99,8 @@ resource "azurerm_resource_group" "julioMCIT" {
   location = "West Europe"
 }
 
-resource "azurerm_mssql_server" "julioMCIT" {
+resource "azurerm_mssql_server" "sqlservercreation" {
+  for_each = {for mssqlserver in local.myjuliosql_app_list : }
   name                         = "mssqlserver"
   resource_group_name          = azurerm_resource_group.example.name
   location                     = azurerm_resource_group.example.location
